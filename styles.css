@@ -423,9 +423,10 @@ img {
 
 .sdet-icon {
     position: absolute;
-    font-size: 40px;
-    opacity: 0.15;
+    font-size: 60px;
+    opacity: 0.35;
     color: var(--primary-color);
+    filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.3));
 }
 
 .sdet-icon:nth-child(1) {
@@ -476,11 +477,12 @@ img {
 
 .sdet-code-line {
     position: absolute;
-    width: 150px;
-    height: 2px;
+    width: 200px;
+    height: 3px;
     background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
-    opacity: 0.2;
+    opacity: 0.4;
     animation: slideRight 15s linear infinite;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
 }
 
 .sdet-code-line:nth-child(7) {
@@ -784,11 +786,12 @@ img {
     position: absolute;
     top: -50px;
     right: -50px;
-    width: 200px;
-    height: 200px;
-    background: rgba(99, 102, 241, 0.05);
+    width: 300px;
+    height: 300px;
+    background: rgba(99, 102, 241, 0.12);
     border-radius: 50%;
     animation: pulse 4s ease-in-out infinite;
+    box-shadow: 0 0 50px rgba(99, 102, 241, 0.2);
 }
 
 .about-section::after {
@@ -798,9 +801,11 @@ img {
     position: absolute;
     bottom: 50px;
     left: 50px;
-    font-size: 100px;
-    opacity: 0.03;
+    font-size: 150px;
+    opacity: 0.08;
+    color: var(--secondary-color);
     animation: bugFloat 20s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px rgba(236, 72, 153, 0.2));
 }
 
 .about-content {
@@ -922,10 +927,11 @@ img {
     top: 50px;
     left: 50px;
     font-family: 'Courier New', monospace;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--primary-color);
-    opacity: 0.1;
-    font-weight: 600;
+    opacity: 0.25;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
 }
 
 .experience-section::after {
@@ -935,10 +941,11 @@ img {
     position: absolute;
     bottom: 50px;
     right: 50px;
-    font-size: 100px;
-    opacity: 0.03;
+    font-size: 140px;
+    opacity: 0.12;
     color: var(--accent-color);
     animation: checkmark 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px rgba(20, 184, 166, 0.4));
 }
 
 .timeline {
@@ -1045,9 +1052,11 @@ img {
     position: absolute;
     top: 100px;
     right: 100px;
-    font-size: 150px;
-    opacity: 0.03;
+    font-size: 180px;
+    opacity: 0.1;
+    color: var(--primary-color);
     animation: rotate 30s linear infinite;
+    filter: drop-shadow(0 0 30px rgba(99, 102, 241, 0.3));
 }
 
 .skills-section::after {
@@ -1057,9 +1066,11 @@ img {
     position: absolute;
     bottom: 100px;
     left: 100px;
-    font-size: 120px;
-    opacity: 0.03;
+    font-size: 150px;
+    opacity: 0.1;
+    color: var(--accent-color);
     animation: rotate 25s linear infinite reverse;
+    filter: drop-shadow(0 0 30px rgba(20, 184, 166, 0.3));
 }
 
 .skills-container {
@@ -1140,8 +1151,8 @@ img {
     right: 0;
     bottom: 0;
     background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(99, 102, 241, 0.03) 2px, rgba(99, 102, 241, 0.03) 4px),
-        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(99, 102, 241, 0.03) 2px, rgba(99, 102, 241, 0.03) 4px);
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(99, 102, 241, 0.08) 2px, rgba(99, 102, 241, 0.08) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(99, 102, 241, 0.08) 2px, rgba(99, 102, 241, 0.08) 4px);
     pointer-events: none;
     animation: gradient 20s ease infinite;
 }
