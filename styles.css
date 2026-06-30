@@ -1314,6 +1314,30 @@ img {
     border: 1px solid var(--border-color);
 }
 
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    transition: all var(--transition-speed) ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+.project-link i {
+    font-size: 1.1em;
+}
+
 /* ==================== ACHIEVEMENTS SECTION ==================== */
 .achievements-section {
     background: var(--bg-secondary);
