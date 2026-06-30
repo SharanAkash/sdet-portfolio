@@ -1,0 +1,69 @@
+========================================
+MOBILE TESTING - QUICK START
+========================================
+
+✅ LOCAL SERVER RUNNING ON PORT 8000
+
+📱 OPTION 1: Test on Real Mobile Device
+========================================
+1. Connect your phone to the SAME WiFi as your Mac
+2. Open browser on your phone (Chrome/Safari)
+3. Visit: http://192.168.1.11:8000
+4. Test all features!
+
+💻 OPTION 2: Test Using Chrome DevTools (Quick)
+========================================
+1. Open portfolio in Chrome
+2. Press: Cmd + Option + I (or F12)
+3. Press: Cmd + Shift + M (or click device icon)
+4. Select device from dropdown:
+   - iPhone SE (375px)
+   - iPhone 12 Pro (390px)
+   - iPhone 14 Pro Max (430px)
+   - iPad (768px)
+   - Samsung Galaxy S20
+
+🎯 WHAT TO TEST
+========================================
+✅ Navigation
+   - Hamburger menu opens/closes
+   - All links work
+   - Resume downloads
+
+✅ Hero Section
+   - Text is readable
+   - Buttons work (Get In Touch, View Projects, Resume)
+   - Social icons work
+
+✅ Sections
+   - About section stats animate
+   - Timeline displays correctly
+   - Skills cards stack properly
+   - Projects cards are readable
+   - Contact form is usable
+
+✅ Animations
+   - Scroll animations work
+   - Floating icons animate
+   - Hover effects on touch
+
+✅ Resume Download
+   - Downloads from hero button
+   - Downloads from nav menu
+   - Downloads from floating button
+
+📱 DEVICE SIZES TO TEST
+========================================
+Mobile Portrait: 320px - 640px
+Mobile Landscape: 641px - 968px
+Tablet: 969px - 1199px
+Desktop: 1200px+
+
+🛑 TO STOP SERVER
+========================================
+Run: lsof -ti:8000 | xargs kill
+
+========================================
+Server URL: http://192.168.1.11:8000
+Local URL:  http://localhost:8000
+========================================
