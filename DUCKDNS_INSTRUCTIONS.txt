@@ -1,0 +1,87 @@
+========================================
+🦆 SETUP: jstamilcenima.duckdns.org
+========================================
+
+⚠️ IMPORTANT: DuckDNS Limitation
+DuckDNS doesn't support HTTPS or CNAME records needed for AWS Amplify.
+
+========================================
+✅ BEST SOLUTION (Choose One):
+========================================
+
+OPTION 1: Point DuckDNS to S3 (HTTP Only)
+------------------------------------------
+1. Get S3 IP:
+   nslookup sdet-portfolio-sharanjs.s3-website-us-east-1.amazonaws.com
+
+2. Go to: https://www.duckdns.org
+3. Login to your account
+4. Find: jstamilcenima
+5. Update IP to: 52.217.97.108 (example)
+6. Click "update ip"
+
+Result: http://jstamilcenima.duckdns.org (HTTP only - not secure)
+
+OPTION 2: Point DuckDNS to Amplify IP (HTTP Only)
+------------------------------------------
+1. Update DuckDNS IP to one of:
+   - 52.84.205.118
+   - 52.84.205.11
+   - 52.84.205.10
+
+2. Go to: https://www.duckdns.org
+3. Update jstamilcenima IP
+4. Save
+
+Problem: Will show HTTP, not HTTPS
+Result: http://jstamilcenima.duckdns.org (may not work properly)
+
+OPTION 3: Use Cloudflare Tunnel (Best!)
+------------------------------------------
+Use Cloudflare to add HTTPS:
+
+1. Sign up: https://dash.cloudflare.com
+2. Deploy portfolio to Cloudflare Pages
+3. Add custom domain: jstamilcenima.duckdns.org
+4. Cloudflare provides HTTPS!
+
+Result: https://jstamilcenima.duckdns.org (Secure!)
+
+OPTION 4: Keep Current URL + Add DuckDNS Later
+------------------------------------------
+Use: https://main.d11ql67lvu8pr0.amplifyapp.com (Current - Works!)
+
+Add DuckDNS when you:
+- Set up Cloudflare
+- Get better hosting solution
+- Buy custom domain
+
+========================================
+💡 MY RECOMMENDATION:
+========================================
+
+For NOW: Use current Amplify URL
+https://main.d11ql67lvu8pr0.amplifyapp.com
+
+For LATER:
+1. Deploy to Cloudflare Pages (FREE + HTTPS)
+2. Then connect jstamilcenima.duckdns.org
+3. Get: https://jstamilcenima.duckdns.org
+
+OR
+
+Buy cheap domain: sharanjs.com ($10/year)
+Better for professional portfolio!
+
+========================================
+🎯 QUICK ACTION:
+========================================
+
+Want me to:
+1. Deploy to Cloudflare Pages now? (10 min)
+2. Setup DuckDNS with HTTP only? (5 min)
+3. Keep current URL and improve later? (Recommended)
+
+Let me know which option you prefer!
+
+========================================

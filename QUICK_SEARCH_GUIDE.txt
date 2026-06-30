@@ -1,0 +1,58 @@
+========================================
+🔍 HOW TO FIND YOUR PORTFOLIO ON GOOGLE
+========================================
+
+✅ WHAT TO SEARCH IN GOOGLE:
+
+1. "Sharan J S" 
+2. "Sharan J S portfolio"
+3. "Sharan J S SDET"
+4. "Sharan J S Swiggy"
+5. "Sharan J S Software Test Engineer"
+
+========================================
+⚡ ACTION REQUIRED (Do This NOW):
+========================================
+
+1. SUBMIT TO GOOGLE SEARCH CONSOLE:
+   → https://search.google.com/search-console
+   → Add: https://main.d11ql67lvu8pr0.amplifyapp.com
+   → Submit sitemap: /sitemap.xml
+
+2. SHARE ON LINKEDIN:
+   → Add portfolio URL to your profile
+   → Write a post about your portfolio
+
+3. UPDATE GITHUB:
+   → Add link to profile README
+
+4. UPDATE RESUME:
+   → Add: https://main.d11ql67lvu8pr0.amplifyapp.com
+
+========================================
+⏰ TIMELINE:
+========================================
+
+Day 1-2: Submit to Google ✅
+Week 1-2: Google indexes your site 🕷️
+Week 2-4: Appears in search for your name 🎯
+Month 1-3: Better ranking 📈
+
+========================================
+🎯 CHECK IF INDEXED:
+========================================
+
+Search Google for:
+site:main.d11ql67lvu8pr0.amplifyapp.com
+
+========================================
+📧 SHARE YOUR PORTFOLIO:
+========================================
+
+Portfolio URL: 
+https://main.d11ql67lvu8pr0.amplifyapp.com
+
+GitHub:
+https://github.com/SharanAkash/sdet-portfolio
+
+========================================

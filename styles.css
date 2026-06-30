@@ -189,6 +189,74 @@ img {
     }
 }
 
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-30px) rotate(10deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+@keyframes checkmark {
+    0%, 100% {
+        transform: scale(0.8) translateY(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2) translateY(-20px);
+        opacity: 1;
+    }
+}
+
+@keyframes bugFloat {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(10px, -15px) rotate(90deg);
+    }
+    50% {
+        transform: translate(-5px, -30px) rotate(180deg);
+    }
+    75% {
+        transform: translate(-15px, -15px) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
 @keyframes mouseScroll {
     0% {
         transform: translateY(0);
@@ -339,6 +407,97 @@ img {
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     opacity: 0.1;
+}
+
+/* SDET Background Elements */
+.sdet-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.sdet-icon {
+    position: absolute;
+    font-size: 40px;
+    opacity: 0.15;
+    color: var(--primary-color);
+}
+
+.sdet-icon:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation: floatUpDown 6s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.sdet-icon:nth-child(2) {
+    top: 20%;
+    right: 15%;
+    animation: floatUpDown 7s ease-in-out infinite;
+    animation-delay: 1s;
+    color: var(--secondary-color);
+}
+
+.sdet-icon:nth-child(3) {
+    bottom: 15%;
+    left: 20%;
+    animation: floatUpDown 8s ease-in-out infinite;
+    animation-delay: 2s;
+    color: var(--accent-color);
+}
+
+.sdet-icon:nth-child(4) {
+    bottom: 25%;
+    right: 10%;
+    animation: floatUpDown 5s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.sdet-icon:nth-child(5) {
+    top: 50%;
+    left: 5%;
+    animation: floatUpDown 9s ease-in-out infinite;
+    animation-delay: 3s;
+    color: #f59e0b;
+}
+
+.sdet-icon:nth-child(6) {
+    top: 60%;
+    right: 5%;
+    animation: floatUpDown 7s ease-in-out infinite;
+    animation-delay: 2.5s;
+    color: var(--secondary-color);
+}
+
+.sdet-code-line {
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    opacity: 0.2;
+    animation: slideRight 15s linear infinite;
+}
+
+.sdet-code-line:nth-child(7) {
+    top: 30%;
+    animation-delay: 0s;
+}
+
+.sdet-code-line:nth-child(8) {
+    top: 70%;
+    animation: slideLeft 18s linear infinite;
+    animation-delay: 2s;
+}
+
+.sdet-code-line:nth-child(9) {
+    top: 50%;
+    animation-delay: 4s;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
 }
 
 .hero-container {
@@ -616,6 +775,32 @@ img {
 /* ==================== ABOUT SECTION ==================== */
 .about-section {
     background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 50%;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.about-section::after {
+    content: '\f188'; /* Font Awesome bug icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 100px;
+    opacity: 0.03;
+    animation: bugFloat 20s ease-in-out infinite;
 }
 
 .about-content {
@@ -726,6 +911,36 @@ img {
 }
 
 /* ==================== EXPERIENCE SECTION ==================== */
+.experience-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-section::before {
+    content: '> test_automation --verbose';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: var(--primary-color);
+    opacity: 0.1;
+    font-weight: 600;
+}
+
+.experience-section::after {
+    content: '\f0c8'; /* Font Awesome square check icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 100px;
+    opacity: 0.03;
+    color: var(--accent-color);
+    animation: checkmark 3s ease-in-out infinite;
+}
+
 .timeline {
     position: relative;
     max-width: 900px;
@@ -819,6 +1034,32 @@ img {
 /* ==================== SKILLS SECTION ==================== */
 .skills-section {
     background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-section::before {
+    content: '\f121'; /* Font Awesome code icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-size: 150px;
+    opacity: 0.03;
+    animation: rotate 30s linear infinite;
+}
+
+.skills-section::after {
+    content: '\f0ad'; /* Font Awesome wrench/settings icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    font-size: 120px;
+    opacity: 0.03;
+    animation: rotate 25s linear infinite reverse;
 }
 
 .skills-container {
@@ -886,11 +1127,32 @@ img {
 }
 
 /* ==================== PROJECTS SECTION ==================== */
+.projects-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(99, 102, 241, 0.03) 2px, rgba(99, 102, 241, 0.03) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(99, 102, 241, 0.03) 2px, rgba(99, 102, 241, 0.03) 4px);
+    pointer-events: none;
+    animation: gradient 20s ease infinite;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
+    position: relative;
+    z-index: 1;
 }
 
 .project-card {
